@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Shop Zone</div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for products...">
+        </div>
+        <div class="navbar-right">
+            <button id="home-btn" class="home">Home</button>
+            <button id="cart-icon" class="cart">🛒 Cart (0)</button>
+            <button id="login-btn" class="login">Login</button>
+        </div>
+    </nav>
+
+    <!-- Cart Dropdown -->
+    <div id="cart-dropdown" class="cart-dropdown">
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-submit">Login</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Our Products</h1>
+        <div id="product-container" class="product-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
